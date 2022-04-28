@@ -1,0 +1,31 @@
+.dmrDd {
+    width: 80px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: #000;
+    position: relative;
+    margin: 0 10px;
+}
+.dmrDd__container
+{
+    display: flex;
+    display:flex;
+    justify-content: space-between;
+    width: 60px;
+}
+.dmrDd__ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    position: absolute;
+    width: 80px;
+    top: 21px;
+    background: #000;
+    border-radius: 5px;
+    left: 0;
+    z-index: 2;
+}
+.dmrDd__ul li {
+    padding: 10px 0;
+}

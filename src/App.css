@@ -1,5 +1,25 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 100%; /* 16px */ 
+}
+body {
+  font-family: IndustryBold,Helvetica,Arial,sans-serif;
+  font-size: 0.9em;
+}
+
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 .App {
   text-align: center;
+  padding: 10px;
 }
 
 .App-logo {
@@ -36,3 +56,44 @@
     transform: rotate(360deg);
   }
 }
+
+
+.text-left {
+  text-align: left;
+}
+.dmrh4 {
+  padding: 10px 0;
+}
+
+/* Settings css */
+.dmrSection {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.dmrSection__container {
+  max-width: 457px;
+  border-radius: 5px;
+  background-color: #212424;
+  flex: 32.6%;
+  margin-bottom: 10px;
+  padding: 0 30px;
+  align-self: flex-start;
+}
+.subSettings {
+  padding: 0 10px;
+}
+
+@media screen and (min-width: 978px) {
+  .dmrSection {
+      flex-direction: row;
+  }
+
+  .dmrSection__container {
+      margin-right: 10px;
+  }
+}
+/* Settings css ends here */

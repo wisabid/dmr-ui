@@ -5,9 +5,26 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #0f0e0e;
+  color: #fff;
+  padding: 10px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@font-face {
+  font-family: "Industry";
+  src: local("Industry"),
+    url("./fonts/Industry-Book.woff") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "IndustryBold";
+  src: local("IndustryBold"),
+    url("./fonts/Industry-Bold.woff") format("truetype");
+  font-weight: normal;
 }

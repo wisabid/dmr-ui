@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Dataminr Dashboard App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -29,18 +29,66 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## HTML Structure 
+```js
+<form>
+        <h4 className="dmrh4 text-left">GENERAL</h4>
+        <section className="dmrSection">
+                <div className="dmrSection__container">
+                    <ArticleSettings label="CASE MANAGEMENT" name="casemanagement" setFormData={setFormData} formData={formData}/>
+                </div>
+                <div className="dmrSection__container">
+                    <ArticleSettings label="MAP TIMELINE" name="maptimeline" setFormData={setFormData} formData={formData}/>
+                </div>
+                <div className="dmrSection__container">
+                    <ArticleSettings label="VIEWS & BRIEFINGS" name="views" setFormData={setFormData} formData={formData}/>
+                </div>
+                <div className="dmrSection__container">
+                    <ArticleSettings label="NOTIFICATIONS" name="notifications" setFormData={setFormData} formData={formData}/>
+                </div>
+                <div className="dmrSection__container">
+                    <ArticleSettings label="MASS COMMUNICATIONS" name="masscomm" setFormData={setFormData} formData={formData}/>
+                </div>
+                <div className="dmrSection__container">
+                    <ArticleSettings label="TRAFFIC CAMERAS" name="traffic" setFormData={setFormData} formData={formData}/>
+                </div>
+        </section>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+        <h4 className="dmrh4 text-left">SETTINGS</h4>
+        <section className="dmrSection">
+                <div className="dmrSection__container">
+                    <ArticleSettings label="AUDIT LOG" name="auditlog2" setFormData={setFormData} formData={formData}/>
+                    <ArticleSettings accordion={true} label="USERS" name="users" setFormData={setFormData} formData={formData}>
+                        <div className="dmrSection__container subSettings">
+                            <ArticleSettings label="USERS ADD" name="usersadd" setFormData={setFormData} formData={formData} subOf="users"/>
+                            <ArticleSettings label="USERS DELETE" name="usersdel" setFormData={setFormData} formData={formData} subOf="users" />
+                            <ArticleSettings label="USERS EDIT" name="usersedit" setFormData={setFormData} formData={formData} subOf="users" />
+                            <ArticleSettings dropDown={true} dropDownName="maxusersdd" label="MAX USERS" dropDownData={['10', '20', '30', '40', '50', '60']} name="maxusers" setFormData={setFormData} formData={formData} subOf="users" />
+                        </div>
+                    </ArticleSettings>
+                </div>
+                <div className="dmrSection__container">
+                    <ArticleSettings label="AUDIT LOG" name="auditlog" setFormData={setFormData} formData={formData}/>
+                </div>
+                <div className="dmrSection__container">
+                    <ArticleSettings label="AUDIT LOG" name="auditlog1" setFormData={setFormData} formData={formData}/>
+                </div>
+        </section>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+       <h4 className="dmrh4 text-left">ALERTS</h4>
+        <section className="dmrSection">
+                <div className="dmrSection__container">
+                    <ArticleSettings label="ALERT MANAGER" name="alertm" setFormData={setFormData} formData={formData}/>
+                    <ArticleSettings dropDown={true} dropDownName="alertsrulesdd" label="ALERT RULES" dropDownData={['10', '20', '30', '40', '50', '60']} name="alertrules" setFormData={setFormData} formData={formData} />
+                </div>
+                <div className="dmrSection__container">
+                    <ArticleSettings label="SOUND ALERT" name="soundalert" setFormData={setFormData} formData={formData}/>
+                </div>
+                <div className="dmrSection__container">
+                    <ArticleSettings label="MSG ALERT" name="msgalert" setFormData={setFormData} formData={formData} />
+                </div>
+        </section>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+        
+    </form>
+```
