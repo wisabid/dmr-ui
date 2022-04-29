@@ -92,3 +92,31 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
         
     </form>
 ```
+
+## Checklist
+
+* Develop a react component based on the screenshot - `./src/pages/Settings.tsx`  ✅
+
+* Toggles either sit in a group or their own ✅
+
+* They can sometimes have an additional input such as numeric dropdowns against the toggle ✅
+
+* If a parent toggle is enabled, the child toggles should be expanded and displayed providing the ability to toggle them off/on ✅
+
+* If a parent toggle is disabled, the child toggles should be disabled and then collapsed ✅
+
+* Use TypeScript - Clean up is yet to be done as `any` type is yet to be substituted. ✅
+
+* A dynamic schema should be provided to drive the form. The input wording and response should not be hardcoded into the UI - Basic JSON has been put to use for generating form and not something like `react-json-schema` library. ✅
+
+* This can run on ReactDOM.render() on a single page for demo purposes. ✅
+
+* In addition, the CRA app is hosted on https://dataminr-db.netlify.app/ ✅
+
+* Unit tests - Basic ones are in place ✅
+
+## Whats Pending?
+
+* Unit tests with all testing scenarios such as toggling etc.
+
+* Schema validation 

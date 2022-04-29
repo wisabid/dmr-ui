@@ -2,7 +2,15 @@ import { useState } from 'react';
 import ExpandCollapse from '../ExpandCollapse/ExpandCollapse';
 import styles from './Dropdown.module.css';
 
-const Dropdown = ({data, setFormData, formData, name, subOf}: {data?: string[]; setFormData: (data: any) => void; formData: any; name: string; subOf: string}) => {
+type Props = {
+  data?: string[]; 
+  setFormData: (data: any) => void; 
+  formData: any; 
+  name: string; 
+  subOf: string
+}
+
+const Dropdown = ({data, setFormData, formData, name, subOf}: Props ) => {
   const [expand, setExpand] = useState(false);
   const [ddValue, setDdValue] = useState('');
   
