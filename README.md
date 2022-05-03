@@ -111,7 +111,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 * This can run on ReactDOM.render() on a single page for demo purposes. ✅
 
-* In addition, the CRA app is hosted on https://dataminr-db.netlify.app/ ✅
+* In addition, the CRA app is hosted on netlify ✅
 
 * Unit tests - Basic ones are in place ✅
 
