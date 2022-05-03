@@ -1,4 +1,4 @@
-# Dataminr Dashboard App
+# Dashboard App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
